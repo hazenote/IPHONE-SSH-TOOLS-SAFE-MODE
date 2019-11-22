@@ -1,0 +1,18 @@
+#!/bin/bash
+clear
+echo "SSH TOOLS - Safe Mode V1"
+echo ""
+echo "===================================="
+echo "Enter IP of the jailbroken device : "
+echo ""
+echo "===================================="
+read IP
+echo ""
+echo "DEFAULT SSH PASSWORD IS : ALPINE"
+ssh root@$IP 'killall -SEGV SpringBoard'
+echo""
+echo "====================================="
+echo "Device is in SAFE-MODE"
+echo""
+echo "Don't forget to change your passwd !"
+echo "" 
